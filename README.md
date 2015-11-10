@@ -23,7 +23,7 @@ Before running the image, you need to edit the `site.conf` configuration file an
 For improved security, the proxy server is password protected. To use it, you just need to generate a new `.htpasswd` file.
 
 ```
-sudo htpasswd -c ./.htpasswd YOUR_USERNAME
+sudo htpasswd -c .htpasswd YOUR_USERNAME
 ```
 
 The tool will prompt you for a password.

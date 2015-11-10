@@ -34,7 +34,7 @@ Re-type new password:
 Adding password for user YOUR_USERNAME
 ```
 
-### Running the docker image.
+### Running the docker image
 
 ```
 $ docker build -t YOUR_DOCKER_USERNAME/nginx_proxy .

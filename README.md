@@ -8,9 +8,10 @@ Simple proxy based on nginx that forwards all requests to a predefined host. Amo
 
 ### Self signed certificate
 
-Installation requires generating the self-signed certificate and running the docker image.
+Installation requires creating an `ssl` directory and generating the self-signed certificate.
 
 ```
+$ mkdir ssl
 $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/server.key -out ssl/server.crt
 ```
 

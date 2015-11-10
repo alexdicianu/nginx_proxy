@@ -16,7 +16,7 @@ $ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl/server.key -ou
 
 ### Adding the right backend
 
-Before running the image, you need to edit the `site.conf` configuration file and set the right value for both `proxy_pass` values (even though you only see the homepage, Nginx will know to forward any path you give him to the proxy_pass host).
+Before running the image, you need to edit the `site.conf` configuration file and set the right value for both `proxy_pass` values (even though you only see the homepage, Nginx will know to forward any path you give it to the proxy_pass host).
 
 ### Running the docker image.
 
@@ -26,8 +26,6 @@ $ docker run -d -t -p 80:80 -p 443:443 --name nginx_proxy YOUR_DOCKER_USERNAME/n
 ```
 
 ## Workflow
-
-Running the curl commands below in your terminal should send them to the proxy, which in turn should pass them to your prefered backend.
 
 HTTP
 
